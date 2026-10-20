@@ -7337,3 +7337,6 @@ blockquote {
 .button.red.wide:hover { background-color: #a8151b; border-color: #a8151b; color: #fff; }
 .value-proposition-buttons .button.red.margin-left.outline { background-color: transparent; border-color: #d71f26; color: #d71f26; }
 .value-proposition-buttons .button.red.margin-left.outline:hover { background-color: #d71f26; border-color: #d71f26; color: #fff; }
+
+/* Szolgáltatások heading: same rhythm as Bemutatkozás */
+#features { padding-top: 0; }
