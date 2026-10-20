@@ -31,7 +31,7 @@
     <div data-collapse="medium" data-animation="over-right" data-duration="400" data-easing="ease-in" class="nav-bar sample-website w-nav">
       <div class="wrapper navbar-2 customized w-container">
         <div class="div-block-8"><a href="../index.html" class="nav-logo-2 w-inline-block"><img src="../images/schindlberger_flat_logo01.png" height="50" alt="Schindlberger Consulting header logo" srcset="../images/schindlberger_flat_logo01-p-500.png 500w, ../images/schindlberger_flat_logo01-p-800.png 800w, ../images/schindlberger_flat_logo01.png 1726w" sizes="(max-width: 479px) 53vw, 253.8125px" class="image-10"><div class="div-block-53"></div></a></div>
-        <nav role="navigation" class="nav-menu-2 w-nav-menu"><a href="../hu/auditalas.html" class="nav-link-2 full-opacity w-nav-link">Auditálás</a><a href="../hu/mentoralas.html" class="nav-link-2 full-opacity w-nav-link">Mentorálás</a><a href="../hu/coaching.html" class="nav-link-2 full-opacity w-nav-link">Coaching</a><a href="../hu/kepzes.html" class="nav-link-2 full-opacity w-nav-link">Képzés</a><a href="../hu/kapcsolat.html" class="nav-link-2 border cta w-nav-link w--current">Kapcsolat</a></nav>
+        <nav role="navigation" class="nav-menu-2 w-nav-menu"><a href="../hu/auditalas.html" class="nav-link-2 full-opacity w-nav-link">Auditálás</a><a href="../hu/mentoralas.html" class="nav-link-2 full-opacity w-nav-link">Mentorálás</a><a href="../hu/coaching.html" class="nav-link-2 full-opacity w-nav-link">Coaching</a><a href="../hu/kepzes.html" class="nav-link-2 full-opacity w-nav-link">Képzés</a></nav>
         <div class="menu-button-2 w-nav-button">
           <div class="burger-icon w-icon-nav-menu"></div>
         </div>
@@ -50,22 +50,32 @@
             <div class="contact-form-container card">
               <div class="margin-bottom">
                 <h3>Kérdése van?</h3>
-                <div class="w-embed w-script">
-                  <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/shell.js"></script>
-                  <script>
-  hbspt.forms.create({
-	portalId: "5181597",
-	formId: "77a98e87-fcdb-4220-8bb7-2ab7e345d2ad"
-});
-</script>
-                </div>
+                <form id="cf-form" class="cf-card" novalidate>
+            <div class="cf-field"><label for="cf-name">Név <span class="cf-req">*</span></label><input id="cf-name" name="firstname" type="text" autocomplete="name" required></div>
+            <div class="cf-field"><label for="cf-email">Email <span class="cf-req">*</span></label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="cf-field"><label for="cf-phone">Telefonszám</label><input id="cf-phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="cf-field"><label for="cf-message">Üzenet <span class="cf-req">*</span></label><textarea id="cf-message" name="message" rows="5" required></textarea></div>
+            <input type="text" name="website" class="cf-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <p class="cf-legal">A küldés gomb megnyomásával megadott adatai rögzítésre és kezelésre kerülnek, hogy a kérését meg tudjuk válaszolni.</p>
+            <label class="cf-check"><input id="cf-news" type="checkbox"><span>Szeretnék szakmai ismeretterjesztő anyagokról és programokról értesülni.</span></label>
+            <label class="cf-check"><input id="cf-consent" type="checkbox" required><span>Megértettem és elfogadom az <a href="../hu/adatvedelem.html" target="_blank">adatvédelmi tájékoztatót</a>. <span class="cf-req">*</span></span></label>
+            <p id="cf-status" class="cf-status" role="alert" aria-live="polite"></p>
+            <button type="submit" class="button red wide cf-submit">Elküldés</button>
+          </form>
+          <script src="../js/contact-form.js"></script>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer">
+    <div id="ugyfeleink" class="section ref-section">
+      <div class="wrapper ref-wrapper">
+        <p class="vb-label">Ügyfeleink:</p>
+        <div class="vb-marquee" aria-label="Ügyfeleink"><div class="vb-track"><div class="vb-group"><span class="vb-item">Artience</span><span class="vb-item">Baumit</span><span class="vb-item">Deltaplast</span><span class="vb-item">Doosan</span><span class="vb-item">Feher Automotive</span><span class="vb-item">Le Bélier</span><span class="vb-item">NSV Automotive</span><span class="vb-item">PannonTools</span><span class="vb-item">Rába</span><span class="vb-item">Rigo Kft</span><span class="vb-item">Toyo Seat</span><span class="vb-item">TSTech</span></div><div class="vb-group" aria-hidden="true"><span class="vb-item">Artience</span><span class="vb-item">Baumit</span><span class="vb-item">Deltaplast</span><span class="vb-item">Doosan</span><span class="vb-item">Feher Automotive</span><span class="vb-item">Le Bélier</span><span class="vb-item">NSV Automotive</span><span class="vb-item">PannonTools</span><span class="vb-item">Rába</span><span class="vb-item">Rigo Kft</span><span class="vb-item">Toyo Seat</span><span class="vb-item">TSTech</span></div></div></div>
+      </div>
+    </div>
+  <div class="footer">
       <div class="wrapper footer w-container">
         <div class="column column-2 column-3 column-4 w-row">
           <div class="footer-link-coloumn w-col w-col-2"><a href="../hu/auditalas.html" class="footer-link">Auditálás</a></div>
@@ -78,7 +88,7 @@
     </div>
     <div class="section footer2">
       <div class="wrapper">
-        <p class="paragraph-small grey">© 2019 Schindlberger Consulting Kft. | Minden jog fenntartva. <br><a href="../hu/adatvedelem.html">Adatvédelmi tájékoztató</a></p>
+        <p class="paragraph-small grey">© 2026 Schindlberger Consulting Kft. | Minden jog fenntartva. <br><a href="../hu/adatvedelem.html">Adatvédelmi tájékoztató</a></p>
       </div>
     </div>
   </div>

@@ -7242,3 +7242,98 @@ blockquote {
   font-weight: 400;
   font-style: normal;
 }
+/* ---- Ügyfeleink ---- */
+.ref-section { background-color: #fff; padding-bottom: 40px; }
+.ref-wrapper { display: block; }
+.ref-card { display: grid; grid-template-columns: repeat(4, 1fr); gap: 34px 20px; margin-top: 30px; padding: 44px 30px; background: #fff; border-radius: 6px; box-shadow: 0 8px 28px rgba(0,0,0,0.12); border-top: 3px solid #d71f26; }
+.ref-item { text-align: center; font-family: Lato, sans-serif; font-weight: 400; font-size: 23px; line-height: 1.3; color: #333; }
+@media (max-width: 991px) { .ref-card { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 479px) { .ref-card { grid-template-columns: 1fr; padding: 30px 20px; } }
+
+/* Hero buttons: all solid red for contrast */
+.value-proposition-buttons .button.red,
+.value-proposition-buttons .button.red.margin-left { background-color: #d71f26; border-color: #d71f26; color: #fff; }
+.value-proposition-buttons .button.red:hover,
+.value-proposition-buttons .button.red.margin-left:hover { background-color: #a8151b; border-color: #a8151b; color: #fff; }
+
+/* ---- Ügyfeleink variants (temporary) ---- */
+.va-tiles { display: flex; flex-wrap: wrap; justify-content: center; margin: 30px -8px 0; }
+.va-tile { flex: 1 1 180px; min-width: 180px; max-width: 260px; margin: 8px; padding: 26px 22px 24px; background: #2b2b2b; border-top: 4px solid #d71f26; color: #fff; text-align: center; }
+.va-num { display: block; font-family: Lato, sans-serif; font-weight: 900; font-size: 54px; line-height: 1; color: rgba(255,255,255,0.12); margin-bottom: 38px; }
+.va-name { display: block; font-family: Lato, sans-serif; font-weight: 700; font-size: 22px; }
+.va-chips { display: flex; flex-wrap: wrap; justify-content: center; margin: 34px auto 0; max-width: 900px; }
+.va-chip { margin: 6px; padding: 10px 22px; border: 2px solid #d71f26; border-radius: 40px; font-family: Lato, sans-serif; font-weight: 700; font-size: 15px; color: #333; }
+.vb-marquee { overflow: hidden; margin-top: 30px; padding: 20px 0; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.vb-track { display: flex; width: max-content; animation: vb-scroll 40s linear infinite; }
+.vb-marquee:hover .vb-track { animation-play-state: paused; }
+.vb-group { display: flex; flex-shrink: 0; align-items: center; }
+.vb-item { white-space: nowrap; font-family: Lato, sans-serif; font-size: 18px; color: #333; }
+.vb-item::after { content: ""; display: inline-block; width: 8px; height: 8px; margin: 0 36px; background: #d71f26; transform: rotate(45deg); vertical-align: middle; }
+@keyframes vb-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.vc-lines { margin-top: 0; }
+.vc-row { display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; margin-bottom: 18px; }
+.vc-lines .vc-row:last-child { margin-bottom: 0; }
+.ref-item2 { white-space: nowrap; font-family: Lato, sans-serif; font-size: 23px; line-height: 1.4; color: #333; }
+.ref-item2:not(:last-child)::after { content: ""; display: inline-block; width: 8px; height: 8px; margin: 0 36px; background: #d71f26; transform: rotate(45deg); vertical-align: middle; }
+@media (max-width: 767px) { .vc-row { flex-wrap: wrap; } .ref-item2:not(:last-child)::after { margin: 0 20px; } }
+
+@media (max-width: 767px) { .vb-item::after { margin: 0 24px; } }
+@media (prefers-reduced-motion: reduce) { .vb-track { animation: none; } .vb-marquee { overflow-x: auto; } }
+
+/* ---- Kapcsolat form v2 ---- */
+.cf-card { width: 100%; max-width: 560px; margin: 30px auto 0; padding: 0; font-family: Lato, sans-serif; }
+.cf-field { margin-bottom: 20px; }
+.cf-field label { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 700; color: #333; }
+.cf-req { color: #d71f26; }
+.cf-field input, .cf-field textarea { display: block; box-sizing: border-box; width: 100%; padding: 12px 18px; border: 2px solid rgba(215,31,38,0.35); border-radius: 22px; background: #f6f6f6; font-family: Lato, sans-serif; font-size: 16px; color: #333; transition: border-color 150ms ease, background-color 150ms ease; }
+.cf-field textarea { resize: vertical; min-height: 130px; border-radius: 18px; }
+.cf-field input:focus, .cf-field textarea:focus { outline: none; background: #fff; box-shadow: none; border-color: rgba(215,31,38,0.7); }
+.cf-field .cf-invalid { border-color: #a8151b; background: #fdf2f2; }
+.cf-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.cf-legal { margin: 8px 0 14px; font-size: 13px; line-height: 1.5; color: #777; }
+.cf-check { display: flex; align-items: flex-start; margin-bottom: 10px; font-size: 14px; line-height: 1.45; color: #333; cursor: pointer; }
+.cf-check input { flex: 0 0 auto; width: 18px; height: 18px; margin: 2px 10px 0 0; accent-color: #d71f26; }
+.cf-check a { color: #d71f26; }
+.cf-status { min-height: 22px; margin: 14px 0 6px; text-align: center; font-size: 15px; }
+.cf-ok { color: #2e7d32; }
+.cf-err { color: #d71f26; }
+.cf-submit { display: block; margin: 8px auto 0; cursor: pointer; }
+.cf-submit:disabled { opacity: 0.6; cursor: default; }
+
+/* Hero: outlined Kapcsolat button (old Szolgáltatások style) */
+.value-proposition-buttons .button.red.margin-left.outline { background-color: transparent; color: #d71f26; border-color: #d71f26; }
+.value-proposition-buttons .button.red.margin-left.outline:hover { background-color: #d71f26; color: #fff; }
+
+/* Spacing: form -> marquee -> footer */
+.cf-section { margin-bottom: 0; }
+.ref-section { padding-top: 0; padding-bottom: 0; }
+.vb-marquee { margin-top: 30px; padding: 10px 0; }
+
+.vb-label { margin: 22px 0 0; text-align: left; font-family: Lato, sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.5px; color: #d71f26; }
+.vb-marquee { margin-top: 0; }
+
+/* Slimmer footer */
+.footer .column.column-2 { margin-top: 8px; margin-bottom: 8px; }
+
+/* Hero: tighter title-subtitle gap */
+.value-proposition-container .heading-5 { margin-bottom: 0; }
+.value-proposition-container .short-paragraph { margin-top: 22px; }
+
+/* Hero: shorter bottom */
+.section.full-screen.background-image-side { padding-bottom: 15px; }
+.value-proposition-container .heading-5 { margin-top: 11px; }
+.section.full-screen.background-image-side { background-position: 100% 100%, 0px 0px, 50% -77px; }
+
+/* No hover jump on buttons */
+.button:hover { -webkit-transform: none; -ms-transform: none; transform: none; }
+
+/* Hover = shade change only (red #d71f26 / dark red #a8151b), never white */
+.button.red:hover,
+.button.red.wide:hover { background-color: #a8151b; border-color: #a8151b; color: #fff; }
+.button.red.margin-left:hover { background-color: #d71f26; border-color: #d71f26; color: #fff; }
+
+/* "Tovább" / "Elküldés" / hero "Kapcsolat": full red idle, same dark red hover as Bemutatkozás */
+.button.red.wide { background-color: #d71f26; border-color: #d71f26; color: #fff; }
+.button.red.wide:hover { background-color: #a8151b; border-color: #a8151b; color: #fff; }
+.value-proposition-buttons .button.red.margin-left.outline { background-color: transparent; border-color: #d71f26; color: #d71f26; }
+.value-proposition-buttons .button.red.margin-left.outline:hover { background-color: #d71f26; border-color: #d71f26; color: #fff; }
