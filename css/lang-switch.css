@@ -1,0 +1,10 @@
+/* Language switch (HU / EN): pill button, set apart from the menu by a thin divider.
+   Builds on the Webflow classes .nav-link-2.border.cta.language */
+.nav-link-2.lang-switch { position: relative; display: inline-flex; align-items: center; gap: 6px; margin-left: 26px; padding: 5px 14px; font-size: 13px; line-height: 20px; letter-spacing: .08em; }
+.nav-link-2.lang-switch:hover { font-weight: 700; }
+.nav-link-2.lang-switch::before { content: ""; position: absolute; left: -17px; top: 50%; height: 22px; margin-top: -11px; border-left: 1px solid #d9d9d9; }
+.nav-link-2.lang-switch svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+@media (max-width: 991px) {
+  .nav-link-2.lang-switch { display: flex; flex: 0 0 auto; width: max-content; margin: 18px auto 0; padding: 8px 20px; }
+  .nav-link-2.lang-switch::before { display: none; }
+}
